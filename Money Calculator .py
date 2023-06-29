@@ -6,17 +6,19 @@ quinientos = int(input("Ingresa los $500: "))
 mil = int(input("Ingresa los $1000: "))
 
 
-def calculator(t, v, w, x, y, z):
-    total_tips = t + v + w + x + y + z
+def calculator(diez, veinte, cincuenta, cien, quinientos, mil):
+    diez_b = (diez * 10)
+    total_tips = diez + veinte + cincuenta + cien + quinientos + mil
 
-    return total_tips
+    return total_tips, diez_b
 
 
-total_tips = calculator(diez, veinte, cincuenta, cien, quinientos, mil)
+diez_b, total_tips = calculator(diez, veinte, cincuenta, cien, quinientos, mil)
 
 print(total_tips)
 print()
-print(f"Total en billetes de $10: {diez} ")
+print(f" Cantidad en $10 {diez} ")
+print(f"Total en billetes de $10: {diez_b} ")
 print()
 print(f"Total en billetes de $20: {veinte} ")
 print()
