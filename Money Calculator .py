@@ -13,12 +13,13 @@ def calculator(diez, veinte, cincuenta, cien, quinientos, mil):
     return total_tips, diez_b
 
 
-diez_b, total_tips = calculator(diez, veinte, cincuenta, cien, quinientos, mil)
+total_tips, diez_b = calculator(diez, veinte, cincuenta, cien, quinientos, mil)
 
-print(total_tips)
 print()
-print(f" Cantidad en $10 {diez} ")
-print(f"Total en billetes de $10: {diez_b} ")
+print(f" Total Tips: {total_tips} ")
+print()
+print(f"Cantidad en $10 {diez} ")
+print(f" Total en billetes de $10: {diez_b} ")
 print()
 print(f"Total en billetes de $20: {veinte} ")
 print()
