@@ -15,14 +15,15 @@ def calculator(diez, veinte, cincuenta, cien, doscientos, quinientos, mil):
     doscientos_b = (doscientos * 200)
     quinientos_b = (quinientos * 500)
     mil_b = (mil * 1000)
-    total_tips = diez_b + veinte_b + cincuenta_b + cien_b + quinientos_b + mil_b
+    total_tips = diez_b + veinte_b + cincuenta_b + cien_b + doscientos_b + quinientos_b + mil_b
 
-    return total_tips, diez_b, veinte_b, cincuenta_b, cien_b, dosciento_b, quinientos_b, mil_b
+    return total_tips, diez_b, veinte_b, cincuenta_b, cien_b, doscientos_b, quinientos_b, mil_b
 
 
-total_tips, diez_b, veinte_b, cincuenta_b, cien_b, dosciento_b, quinientos_b, mil_b = calculator(diez, veinte,
-                                                                                                 cincuenta, cien,
-                                                                                                 quinientos, mil)
+total_tips, diez_b, veinte_b, cincuenta_b, cien_b, doscientos_b, quinientos_b, mil_b = calculator(diez, veinte,
+                                                                                                  cincuenta, cien,
+                                                                                                  doscientos,
+                                                                                                  quinientos, mil)
 
 print()
 print(f" Total Tips: {total_tips} ")
@@ -39,8 +40,8 @@ print()
 print(f"Cantidad en $100 {cien} ")
 print(f" Total en billetes de $100: {cien_b} ")
 print()
-print(f"Cantidad en $200 {dlscientos} ")
-print(f" Total en billetes de $100: {doscientos_b} ")
+print(f"Cantidad en $200 {doscientos} ")
+print(f" Total en billetes de $200: {doscientos_b} ")
 print()
 print(f"Cantidad en $500 {quinientos} ")
 print(f" Total en billetes de $500: {quinientos_b} ")
